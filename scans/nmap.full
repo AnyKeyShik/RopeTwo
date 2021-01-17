@@ -1,0 +1,24 @@
+# Nmap 7.80 scan initiated Wed Sep  9 20:25:23 2020 as: nmap -sC -sV -oN scans/nmap.full ropetwo.htb
+Nmap scan report for ropetwo.htb (10.10.10.196)
+Host is up (0.062s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.9p1 Ubuntu 10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 bc:d9:40:18:5e:2b:2b:12:3d:0b:1f:f3:6f:03:1b:8f (RSA)
+|   256 15:23:6f:a6:d8:13:6e:c4:5b:c5:4a:6f:5a:6b:0b:4d (ECDSA)
+|_  256 83:44:a5:b4:88:c2:e9:28:41:6a:da:9e:a8:3a:10:90 (ED25519)
+5000/tcp open  http    nginx
+| http-robots.txt: 55 disallowed entries (15 shown)
+| / /autocomplete/users /search /api /admin /profile 
+| /dashboard /projects/new /groups/new /groups/*/edit /users /help 
+|_/s/ /snippets/new /snippets/*/edit
+| http-title: Sign in \xC2\xB7 GitLab
+|_Requested resource was http://ropetwo.htb:5000/users/sign_in
+|_http-trane-info: Problem with XML parsing of /evox/about
+8000/tcp open  http    Werkzeug httpd 0.14.1 (Python 3.7.3)
+|_http-title: Home
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Sep  9 20:25:38 2020 -- 1 IP address (1 host up) scanned in 15.40 seconds

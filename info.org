@@ -1,0 +1,20 @@
+* NMAP:
+** 5000 - gitlab
+** 8000 - v8 dev homepage
+
+* Get user with id 1
+** info in ~id1.json~
+*** root e-mail: ~admin@example.com~
+
+* OOB + TypeConfusion
+** Get revshell with js sploit throw contact from on v8dev homepage and patched v8 on gitlab
+** Links:
+*** https://faraz.faith/2019-12-13-starctf-oob-v8-indepth/
+*** https://v8.dev/blog/pointer-compression
+*** https://blog.infosectcbr.com.au/2020/02/pointer-compression-in-v8.html
+*** http://www.phrack.org/papers/jit_exploitation.html
+*** https://v8.dev/blog/elements-kinds
+*** https://blog.infosectcbr.com.au/2020/03/heap-exploitation-in-chromes.html
+*** https://v8.dev/docs/build-gn
+*** https://v8.dev/blog/v8-release-83#performance
+*** https://javascript.info/arraybuffer-binary-arrays
